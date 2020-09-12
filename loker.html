@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Informasi lowongan kerja terbaru dan terpercaya."/>
+        <meta name="dicoding:email" content="egierdian1@gmail.com">
+        <!-- Icon -->
+        <link rel="shortcut icon" href="images/el-icon.jpg">
+        <link rel="apple-touch-icon" href="images/el-icon.jpg">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>E-Loker | Informasi Lowongan Kerja</title>
+    </head>
+    <body class="bg-light">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+              <a class="navbar-brand display-5" href="index.html"><strong>E-Loker</strong></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="loker.html">Daftar Loker</a>    
+                    <a class="nav-item nav-link" href="faq.html">FAQ</a>
+                  </div>
+              </div>
+          </div>
+        </nav>
+        <section id="isi">
+          <!-- container -->
+          <div class="container" style="min-height: 500px;">
+              <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-secondary rounded box-shadow">
+                  <img class="mr-3" src="images/el-icon.jpg" alt="" width="48" height="48">
+                  <div class="lh-100">
+                    <h6 class="mb-0 text-white lh-100">E-Loker</h6>
+                    <small>Dapatkan informasi lowongan kerja terbaru dan terpercaya.</small>
+                  </div>
+              </div>
+          
+              <div class="my-3 p-3 bg-white rounded box-shadow">
+                  <h6 class="border-bottom border-gray pb-2 mb-0">Loker Terbaru</h6>
+                  <div id="dataLoker"></div>
+                  <small class="d-block text-right mt-3">
+                    <a href="loker.html">Daftar Loker</a>
+                  </small>
+              </div>
+          </div>
+          
+          <!-- Footer -->
+          <footer class="page-footer bg-dark font-small text-light blue" style="padding-top:10px;">
+              <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">© Copyright 2020 | 
+                  <a href="https://github.com/egierdian" class="text-light">Egi Erdian</a>
+              </div>
+              <!-- Copyright -->
+          </footer>
+        </section>
+        <!-- Spinners -->
+        <section id="spinner">
+          <div class="d-flex justify-content-center">
+              <div class="spinner-grow" role="status">
+                  <span class="sr-only">Loading...</span>
+              </div> 
+              <div class="spinner-grow" role="status">
+                  <span class="sr-only">Loading...</span>
+              </div> 
+              <div class="spinner-grow" role="status">
+                  <span class="sr-only">Loading...</span>
+              </div>
+              <div class="spinner-grow" role="status">
+                  <span class="sr-only">Loading...</span>
+              </div>
+              <div class="spinner-grow" role="status">
+                  <span class="sr-only">Loading...</span>
+              </div>
+          </div>
+        </section>
+        <!-- Akhir spinners -->
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dataLoker.js"></script>
+    <script src="js/spinner.js"></script>
+</html>
