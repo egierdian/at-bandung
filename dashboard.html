@@ -28,9 +28,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#kategori">Kategori</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#wisata">wisata</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li> -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#kategori">Kategori</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#wisata">wisata</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" onclick="logout()">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,54 +40,22 @@
             <div class="container">
                 <div class="masthead-subheading">Berbagai tempat wisata asyik yang ada di Bandung</div>
                 <div class="masthead-heading text-uppercase">at-Bandung</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#kategori">Lihat selengkapnya</a>
+                <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#kategori">Lihat selengkapnya</a> -->
             </div>
         </header>
-        <!-- Services-->
-        <section class="page-section" id="kategori">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Kategori</h2>
-                    
-                    <h3 class="section-subheading text-muted">Tersedia berbagai kategori wisata.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-book fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Wisata Alam</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-book fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Wisata Sejarah</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-book fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Wisata Cagar Alam</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Tempat wisata Grid-->
         <section class="page-section bg-light" id="wisata">
             <div class="container">
                 
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Tempat Wisata</h2>
-                    <h3 class="section-subheading text-muted">Daftar wisata yang ada di <b>Bandung</b>.</h3>
+                    <h2 class="section-heading text-uppercase">Data</h2>
+                    <!-- <h3 class="section-subheading text-muted"> -->
+                        <a class="btn btn-success js-scroll-trigger" href="add.html">Tambah Data</a>
+                    <!-- </h3> -->
+                    
                 </div>
-                <div class="row" id="tmpWisata">
+                <br /><br />
+                <div id="dataWisata">
                 </div>
             </div>
         </section>
@@ -141,6 +109,7 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="js/data.js"></script>
+        <script src="js/dashboard.js"></script>
+        <script src="js/validasilogin.js"></script>
     </body>
 </html>
