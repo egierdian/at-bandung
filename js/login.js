@@ -8,7 +8,6 @@ var config = {
     appId: "1:740884082386:web:ff5879496507eae97a870b"
 };
 firebase.initializeApp(config);
-
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
@@ -17,7 +16,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     var user = firebase.auth().currentUser;
 
     if(user != null){
-      // var email_id = user.email;
+      console.log('Berhasil');
     }
 
   } else {
@@ -35,9 +34,15 @@ function login(){
     var errorCode = error.code;
     var errorMessage = error.message;
 
-    window.alert("Error : " + errorMessage);
-
+    // alert(''+errorCode);
     // ...
-  });
-
+  }
+  );
 }
+
+function logout(){
+  firebase.auth().signOut();
+}
+
+
+

@@ -47,7 +47,7 @@ function dataBerhasil(data){
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">${hasil.val().judul}</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="item-intro text-muted">${hasil.val().alamat}</p>
                                     <img class="img-fluid d-block mx-auto" src="${hasil.val().gambar}" alt="" />
                                     <p>${hasil.val().isi}</p>
                                     <ul class="list-inline">
